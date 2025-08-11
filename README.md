@@ -48,3 +48,19 @@ Again, this isn’t production-ready code. It’s good enough for me, and if it 
 
 1. **Flash CircuitPython** on a Raspberry Pi **Pico W**.  
 2. **Copy files** to the `CIRCUITPY` drive:
+3. Create a file setup ( no extension )
+4. Reboot
+5. Connect BiduleBox SSID
+<img width="277" height="102" alt="image" src="https://github.com/user-attachments/assets/a85374e5-a6f5-4cda-b1e1-be86403a6ade" />
+<img width="639" height="356" alt="image" src="https://github.com/user-attachments/assets/c51acb70-cc39-4a6e-be6e-5cc27dbc14a2" />
+6. Go to http://192.168.4.1 or other IP Address
+7. Create a key ( key name text only ), push buttons to have 24/24 AES Key then click on Done
+8. Assign macro or command to buttons
+9. Reboot ( click on the switch )
+10. Unplug / Plug
+
+Commands and buttons dfintion are stored inside /commands.json macros inside macros/name.json to use macro with button => use macro_FILENAME
+
+Et voilà !
+
+
