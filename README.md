@@ -1,7 +1,5 @@
 # BiduleBox
 
-[![GitHub release](https://img.shields.io/github/v/release/fred2nice/bidulebox?label=Release&color=blue)](https://github.com/fred2nice/bidulebox/releases)  
-[![License](https://img.shields.io/github/license/fred2nice/bidulebox?color=green)](LICENSE)  
 [![Issues](https://img.shields.io/github/issues/fred2nice/bidulebox?color=orange)](https://github.com/fred2nice/bidulebox/issues)  
 [![Last Commit](https://img.shields.io/github/last-commit/fred2nice/bidulebox?color=purple)](https://github.com/fred2nice/bidulebox/commits/main)  
 
