@@ -1,9 +1,9 @@
 # BiduleBox
 
-[![GitHub release](https://img.shields.io/github/v/release/fred2nice/BiduleBox?label=Release&color=blue)](https://github.com/fred2nice/BiduleBox/releases)  
-[![License](https://img.shields.io/github/license/fred2nice/BiduleBox?color=green)](LICENSE)  
-[![Issues](https://img.shields.io/github/issues/fred2nice/BiduleBox?color=orange)](https://github.com/fred2nice/BiduleBox/issues)  
-[![Last Commit](https://img.shields.io/github/last-commit/fred2nice/BiduleBox?color=purple)](https://github.com/fred2nice/BiduleBox/commits/main)  
+[![GitHub release](https://img.shields.io/github/v/release/fred2nice/bidulebox?label=Release&color=blue)](https://github.com/fred2nice/bidulebox/releases)  
+[![License](https://img.shields.io/github/license/fred2nice/bidulebox?color=green)](LICENSE)  
+[![Issues](https://img.shields.io/github/issues/fred2nice/bidulebox?color=orange)](https://github.com/fred2nice/bidulebox/issues)  
+[![Last Commit](https://img.shields.io/github/last-commit/fred2nice/bidulebox?color=purple)](https://github.com/fred2nice/bidulebox/commits/main)  
 
 <img width="3000" height="2000" alt="bidule" src="https://github.com/user-attachments/assets/a8f3a49c-0264-4960-b8fb-9ab7d8a01ecc" />
 
