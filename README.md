@@ -32,7 +32,7 @@ It’s also a way to experiment with CircuitPython and electronics — a test-an
 Assign a button to launch PuTTY, log in, run `sudo`, execute a command, or even connect to a first server, start a VPN, and SSH into another.
 
 **Security note:**  
-Decryption happens at every BiduleBox startup. The key is a 24-character AES key generated from a sequence of button presses. If the key is compromised, stored passwords can be recovered.
+Decryption happens at every BiduleBox startup. The key is a 24-character AES key generated from a sequence of button presses. Key cannot be recovered.
 
 ---
 
