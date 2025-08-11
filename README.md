@@ -6,7 +6,7 @@
 [![Last Commit](https://img.shields.io/github/last-commit/fred2nice/bidulebox?color=purple)](https://github.com/fred2nice/bidulebox/commits/main)  
 
 <img width="3000" height="2000" alt="bidule" src="https://github.com/user-attachments/assets/a8f3a49c-0264-4960-b8fb-9ab7d8a01ecc" />
-
+ 
 > **Macro keyboard for Raspberry Pi Pico W — Wi-Fi only for setup, USB HID for daily use.**
 
 ---
