@@ -1,0 +1,26 @@
+{
+  "actions": [
+    {
+      "winsearch": true,
+      "delay_ms": 1000,
+      "command": "putty.exe -ssh pi@192.168.1.1\n",
+      "password_key": "user_pi",
+      "sleep_ms": 2000
+    },
+    {
+      "winsearch": false,
+      "delay_ms": 0,
+      "command": "ssh pi@192.168.1.2\n",
+      "password_key": "user_pi",
+      "sleep_ms": 2000
+    },
+    {
+      "winsearch": false,
+      "delay_ms": 0,
+      "command": "ssh pi@192.168.1.2\n",
+      "password_key": "user_pi",
+      "sleep_ms": 200
+    },
+	{ "keys": ["CTRL","D"], "sleep_ms": 220 }
+  ]
+}

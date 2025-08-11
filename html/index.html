@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>BiduleBox Settings</title>
+		<link rel="stylesheet" href="style.css">
+		<style>
+		</style>
+	</head>
+	<body>
+		<header class="header" aria-hidden="false">
+			<div class="title" aria-label="BiduleBox Settings">
+				<div class="line" aria-hidden="true"></div>
+				<h1>BiduleBox Settings</h1>
+				<div class="line" aria-hidden="true"></div>
+				<div class="subtitle">PICO W · MACRO KEYBOARD · Control Panel</div>
+			</div>
+		</header>
+		<div class="stage">
+			<div class="lab-panel">
+				<div class="panel-label">BiduleBox | v 1.0.1.b</div>
+				<div class="box" id="box" aria-label="Boîte de contrôle BiduleBox">
+					<div class="top"></div><div class="right"></div>
+					<div class="face">
+						<!-- LEDs -->
+						<div class="led l-red" data-color="red" id="ledR" title="LED rouge"></div>
+						<div class="led l-green" data-color="green" id="ledG" title="LED verte"></div>
+						<!-- Compteur AES key -->
+						<div id="aesKeyLength" style="display:none;text-align:center;margin-bottom:8px;font-size:14px;color:#8affb7;">
+							AES Key length: <span id="aesKeyLengthVal">0</span>/24
+						</div>
+						<div class="grid">
+							<!-- Interrupteur -->
+							<div id="toggle" class="switch off" role="switch" aria-checked="false" aria-label="Interrupteur ON/OFF" tabindex="0">
+								<svg viewBox="0 0 150 190" aria-hidden="true">
+									<defs>
+										<linearGradient id="sw-plate" x1="0" y1="0" x2="0" y2="1">
+											<stop offset="0"  stop-color="#f3f5f7"/>
+											<stop offset="0.5" stop-color="#c8cdd2"/>
+											<stop offset="1"  stop-color="#9aa1a8"/>
+										</linearGradient>
+										<linearGradient id="sw-bezel" x1="0" y1="0" x2="1" y2="1">
+											<stop offset="0"   stop-color="#cfd4d9"/>
+											<stop offset="0.6" stop-color="#90959b"/>
+											<stop offset="1"   stop-color="#6a7077"/>
+										</linearGradient>
+										<radialGradient id="sw-ball" cx="38%" cy="32%">
+											<stop offset="0" stop-color="#ffffff"/>
+											<stop offset="0.6" stop-color="#cfd3d8"/>
+											<stop offset="1" stop-color="#8e949a"/>
+										</radialGradient>
+										<linearGradient id="sw-stem" x1="0" y1="0" x2="0" y2="1">
+											<stop offset="0" stop-color="#cfd5db"/>
+											<stop offset="1" stop-color="#6b727a"/>
+										</linearGradient>
+									</defs>
+									<rect x="12" y="12" width="126" height="166" rx="10" fill="url(#sw-plate)" stroke="#5b6066" stroke-width="2"/>
+									<rect x="18" y="18" width="114" height="154" rx="8" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="2"/>
+									<path d="M40 26 h70 a8 8 0 0 1 8 8 v18 H32 V34 a8 8 0 0 1 8-8z" fill="#cf2330"/>
+									<text x="75" y="44" text-anchor="middle" font-family="Segoe UI,Arial" font-size="18" font-weight="800" fill="#fff">ON</text>
+									<path d="M32 146 h86 v18 a8 8 0 0 1 -8 8 h-70 a8 8 0 0 1 -8 -8z" fill="#1f2024"/>
+									<text x="75" y="163" text-anchor="middle" font-family="Segoe UI,Arial" font-size="18" font-weight="800" fill="#fff">OFF</text>
+									<g transform="translate(0,0)">
+										<circle cx="75" cy="98" r="30" fill="#2b2f34" opacity=".4"/>
+										<polygon points="75,68 100,83 100,113 75,128 50,113 50,83" fill="url(#sw-bezel)" stroke="#3d4248" stroke-width="2"/>
+										<circle cx="75" cy="98" r="16" fill="#2b2f34" stroke="#4a4f55" stroke-width="3"/>
+										<circle cx="75" cy="98" r="13" fill="none" stroke="#bfc5cb" stroke-width="2" stroke-dasharray="2 3" opacity=".7"/>
+									</g>
+									<g class="arm" style="transform-origin:75px 96px">
+										<rect x="71" y="38" width="8" height="58" rx="4" fill="url(#sw-stem)" stroke="#545961" stroke-width="1.5"/>
+										<circle cx="75" cy="34" r="12" fill="url(#sw-ball)" stroke="#5b6167" stroke-width="1.5"/>
+										<ellipse cx="71" cy="30" rx="5" ry="3" fill="#ffffff" opacity=".65"/>
+									</g>
+								</svg>
+							</div>
+							<!-- Boutons -->
+							<button data-bt-id="5" class="btn blue  r-blue"  aria-label="Bouton bleu (haut)"></button>
+							<button data-bt-id="6" class="btn white r-white" aria-label="Bouton blanc (haut)"></button>
+							<button data-bt-id="1" class="btn red   b-red"   aria-label="Bouton rouge (bas)"></button>
+							<button data-bt-id="2" class="btn white b-white" aria-label="Bouton blanc (bas)"></button>
+							<button data-bt-id="3" class="btn blue  b-blue"  aria-label="Bouton bleu (bas)"></button>
+							<button data-bt-id="4" class="btn green b-green" aria-label="Bouton vert (bas)"></button>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+			
+				
+			</div>
+				
+				<div class="lab-actions lab-actions--neo">
+  <div class="legend">Actions</div>
+
+  <button class="btn-neo btn-neo--primary send-key" hidden>Done</button>
+  <button class="btn-neo btn-neo--ghost  save-key">Save a key</button>
+  <button class="btn-neo btn-neo--primary save-config">Save BiduleBox settings</button>
+</div>
+			
+		</div>
+		<!-- POPIN Boutons -->
+		<div class="popin-backdrop" id="popinBackdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="popinTitle">
+			<div class="popin" role="document">
+				<button class="btn-close" id="popinClose" aria-label="Fermer">✕</button>
+				<header class="popin-header">
+					<span class="chip" aria-hidden="true"></span>
+					<h2 class="popin-title" id="popinTitle">Button settings</h2>
+					<div class="popin-meta" id="popinMeta">ID <span id="popinBtnId">—</span></div>
+				</header>
+				<form id="btnForm" class="popin-body">
+					<input type="hidden" id="f_id" name="id" readonly>
+					<div class="row">
+						<div class="f">
+							<label>Color</label>
+							<input type="text" id="f_color" name="color" placeholder="rouge / blanc / bleu / vert">
+						</div>
+						<div class="f">
+							<label>Pin</label>
+							<input type="text" id="f_pin" name="pin" placeholder="ex: GP11">
+						</div>
+					</div>
+					<div class="f">
+						<label>Macro</label>
+						<input type="text" id="f_macro" name="macro" placeholder="ex: persephone">
+					</div>
+					<div class="f">
+						<label>Command</label>
+						<textarea id="f_command" name="command" rows="3" placeholder="ex: firefox https://..."></textarea>
+					</div>
+					<div class="row">
+						<div class="f">
+							<label>Pass key</label>
+							<input type="text" id="f_pass_key" name="pass_key" placeholder="ex: rpi">
+						</div>
+						<div class="f f-inline">
+							<label class="chk"><input type="checkbox" id="f_winsearch" name="winsearch"> WinSearch</label>
+						</div>
+						<div class="f">
+							<label>Delay (ms)</label>
+							<input type="number" id="f_delay_ms" name="delay_ms" min="0" step="50" placeholder="500">
+						</div>
+					</div>
+				</form>
+				<div class="popin-actions">
+					<button class="btn-hud secondary" id="popinCancel" type="button">Cancel</button>
+					<button class="btn-hud" id="popinSave" type="button">Save</button>
+				</div>
+			</div>
+		</div>
+		<!-- POPUP Reboot -->
+		<div class="reboot-backdrop" id="rebootBackdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="rebootTitle">
+			<div class="reboot-box" role="document">
+				<h2 class="reboot-title" id="rebootTitle">System reboot</h2>
+				<div class="reboot-count" id="rebootCount">Rebooting (10s)</div>
+				<div class="reboot-note" id="rebootNote">All controls are temporarily disabled.</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
